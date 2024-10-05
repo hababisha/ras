@@ -1,0 +1,19 @@
+{
+  "name": "ras-geez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hababisha/ras.git"
+  },
+  "author": "Haileamlak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hababisha/ras/issues"
+  },
+  "homepage": "https://github.com/hababisha/ras#readme"
+}

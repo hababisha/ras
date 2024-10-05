@@ -34,18 +34,18 @@ function Details() {
       />
       <div className="absolute inset-0 bg-black opacity-60"></div>
       
-      <div id="Details" className="relative flex justify-center items-center h-full">
-        <div className="flex justify-around items-center w-full max-w-4xl p-4">
+      <div id="Details" className="relative flex flex-col items-center justify-center h-full p-4">
+        <div className="flex flex-wrap justify-around items-center w-full max-w-4xl p-4">
           {/* CBE Section */}
-          <div className="flex flex-col items-center text-center">
-            <div className='h-[22vh] w-[25vh] flex justify-center items-center'>
-              <img src={cbe} alt="CBE Logo" className='h-[17vh] w-[17vh]' />
+          <div className="flex flex-col items-center text-center mb-4 w-1/2 sm:w-1/3">
+            <div className='flex justify-center items-center'>
+              <img src={cbe} alt="CBE Logo" className='h-[12vh] w-auto max-w-full' />
             </div>
-            <p className='text-2xl font-bold text-white'>CBE</p>
-            <p className='text-xl font-semibold text-white'>Surafel Getnet</p>
+            <p className='text-xl font-bold text-white'>CBE</p>
+            <p className='text-lg font-semibold text-white'>Surafel Getnet</p>
 
             <div className='flex items-center justify-center'>
-              <p className='text-xl font-semibold text-white'>{bankAccount}</p>
+              <p className='text-lg font-semibold text-white'>{bankAccount}</p>
               <button 
                 onClick={() => handleCopy(bankAccount, 'bankAccount')} 
                 className="ml-2 pb-2 text-white rounded hover:text-blue-600 transition"
@@ -57,15 +57,15 @@ function Details() {
           </div>
 
           {/* Telebirr Section */}
-          <div className="flex flex-col items-center text-center">
-            <div className='h-[22vh] w-[25vh] flex justify-center items-center'>
-              <img src={telebirr} alt="Telebirr Logo" className='h-[12vh] w-[17vh]' />
+          <div className="flex flex-col items-center text-center mb-4 w-1/2 sm:w-1/3">
+            <div className='flex justify-center items-center'>
+              <img src={telebirr} alt="Telebirr Logo" className='h-[12vh] w-auto max-w-full' />
             </div>
-            <p className='text-2xl font-bold text-white'>Telebirr</p>
-            <p className='text-xl font-semibold text-white'>Surafel Getnet</p>
+            <p className='text-xl font-bold text-white'>Telebirr</p>
+            <p className='text-lg font-semibold text-white'>Surafel Getnet</p>
 
             <div className='flex items-center justify-center'>
-              <p className='text-xl font-semibold text-white'>{phoneNumber}</p>
+              <p className='text-lg font-semibold text-white'>{phoneNumber}</p>
               <button 
                 onClick={() => handleCopy(phoneNumber, 'phoneNumber')} 
                 className="ml-2 pb-2 text-white rounded hover:text-blue-600 transition"
@@ -75,22 +75,19 @@ function Details() {
             </div>
             {copyType === 'phoneNumber' && <span className="ml-2 text-white">{copySuccess}</span>}
           </div>
-          
         </div>
-        <div className="z-100  relative flex flex-col items-center justify-center bg-gray-500 bg-opacity-40 p-6 rounded-lg shadow-lg mx-4 mt-8 z-100">
-        <h2 className="text-3xl font-bold text-center text-white mb-4">Order and payment</h2>
-        <p className="text-lg text-center text-white mb-4">
-        You can call us to place your order. After payment, please send the screenshot to the following number or reach out to us on Telegram <em>@getsura</em>.
-        </p>
-        <p className="text-xl font-semibold text-white mb-2">{phoneNumber}</p>
-        <p className="text-lg text-center text-white">
-          Thank you for your business!
-        </p>
-      </div>
-      </div>
 
-      {/* Payment Instructions Section */}
-      
+        <div className="relative flex flex-col items-center justify-center bg-gray-500 bg-opacity-40 p-4 rounded-lg shadow-lg mx-4 mt-4 z-10">
+          <h2 className="text-2xl font-bold text-center text-white mb-2">Order and Payment</h2>
+          <p className="text-base text-center text-white mb-2">
+            You can call us to place your order. After payment, please send the screenshot to the following number or reach out to us on Telegram <em>@getsura</em>.
+          </p>
+          <p className="text-lg font-semibold text-white mb-2">{phoneNumber}</p>
+          <p className="text-base text-center text-white">
+            Thank you for your business!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

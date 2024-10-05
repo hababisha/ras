@@ -4,10 +4,10 @@ const Contact = () => {
   return (
     <div id="Contact" className="h-screen flex flex-col items-center justify-center bg-gray-900 p-6">
       
-      <div className="mt-[3.5em] bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
+      <div className="mt-[3.5em] bg-blue-900 shadow-lg rounded-lg p-8 max-w-lg w-full">
         <form>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+            <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
               Name
             </label>
             <input
@@ -20,7 +20,7 @@ const Contact = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+            <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
               Email
             </label>
             <input
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+            <label className="block text-white text-sm font-bold mb-2" htmlFor="message">
               Message
             </label>
             <textarea
@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="flex items-center justify-between">
             <button
               type="submit"
-              className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             >
               Send Message
             </button>
@@ -61,7 +61,7 @@ const Contact = () => {
         <p className="text-gray-200">You can reach us at:</p>
         <p className="text-gray-200">Phone: +251 962719768</p>
         <p className="text-gray-200">Email: surafelgetnet@gmail.com</p>
-        <p className="text-gray-200">Address: አኮቴት ፕሪ ት/ቤት ፊትለፊት , Bahirdar, Ethiopia</p>
+        <p className="text-gray-200">Address: አኮቴት ፕሪ ት/ቤት ፊትለፊት, Bahirdar, Ethiopia</p>
       </div>
     </div>
   );

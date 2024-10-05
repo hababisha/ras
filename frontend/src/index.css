@@ -9,3 +9,20 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+
+ul {
+  top: 3.5em;
+  padding-right:0;
+  margin-right:0; /* Adjust based on navbar height */
+  background: rgba(0, 0, 0, 0.8); /* Background for mobile menu */
+  transition: top 0.3s ease;
+  padding: 1em; /* Add some padding for better spacing */
+}
+
+@media (min-width: 768px) {
+  ul {
+    position: static;
+    background: transparent; /* Reset background for larger screens */
+    padding: 0; /* Remove padding on larger screens */
+  }
+}

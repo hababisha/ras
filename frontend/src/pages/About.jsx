@@ -31,7 +31,7 @@ const About = () => {
   };
 
   return (
-    <div id="About" className=" relative w-full h-screen overflow-hidden">
+    <div id="About" className="relative w-full h-screen overflow-hidden">
       {images.map((image, index) => (
         <div
           key={index}
@@ -43,28 +43,28 @@ const About = () => {
       ))}
 
       <div className="absolute inset-0 bg-black opacity-60"></div>
-      <div className="relative  flex flex-col items-center justify-center h-full">
-        <h1 className="text-4xl font-bold text-white mb-4">{images[currentIndex].title}</h1>
-        <p className="text-center text-white max-w-2xl">
+      <div className="relative flex flex-col items-center justify-center h-full text-center p-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">{images[currentIndex].title}</h1>
+        <p className="text-base sm:text-lg md:text-xl text-white max-w-md sm:max-w-2xl">
           {images[currentIndex].note}
         </p>
         
-        {/* Navigation Icons with Adjusted Positioning */}
+        {/* Navigation Icons with Responsive Positioning */}
         <div 
-          className="absolute left-[10em] top-1/2 transform -translate-y-1/2 cursor-pointer" 
+          className="absolute left-4 sm:left-10 top-1/2 transform -translate-y-1/2 cursor-pointer" 
           onClick={handlePrev}
           role="button" // Accessibility
           aria-label="Previous Image" // Accessibility
         >
-          <FontAwesomeIcon icon={faChevronLeft} className="text-white text-3xl" />
+          <FontAwesomeIcon icon={faChevronLeft} className="text-white text-3xl sm:text-4xl" />
         </div>
         <div 
-          className="absolute right-[10em] top-1/2 transform -translate-y-1/2 cursor-pointer" 
+          className="absolute right-4 sm:right-10 top-1/2 transform -translate-y-1/2 cursor-pointer" 
           onClick={handleNext}
           role="button" // Accessibility
           aria-label="Next Image" // Accessibility
         >
-          <FontAwesomeIcon icon={faChevronRight} className="text-white text-3xl" />
+          <FontAwesomeIcon icon={faChevronRight} className="text-white text-3xl sm:text-4xl" />
         </div>
       </div>
     </div>

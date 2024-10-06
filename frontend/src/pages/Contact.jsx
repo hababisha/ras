@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="Contact" className="h-screen flex flex-col items-center justify-center bg-gray-900 p-6">
+    <div id="Contact" className="min-h-screen flex flex-col items-center justify-center bg-gray-900 p-4 sm:p-6">
       
-      <div className="mt-[3.5em] bg-blue-900 shadow-lg rounded-lg p-8 max-w-lg w-full">
+      <div className="mt-16 sm:mt-[3.5em] bg-blue-900 shadow-lg rounded-lg p-4 sm:p-8 w-full max-w-lg">
         <form>
           <div className="mb-4">
             <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
@@ -40,7 +40,7 @@ const Contact = () => {
               id="message"
               placeholder="Your Message"
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              rows="5"
+              rows="4"
               required
             />
           </div>
@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="flex items-center justify-between">
             <button
               type="submit"
-              className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:w-auto"
             >
               Send Message
             </button>
@@ -56,12 +56,12 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className="mt-8 text-center">
-        <h2 className="text-2xl font-bold text-gray-100 mb-4">Get in Touch</h2>
-        <p className="text-gray-200">You can reach us at:</p>
-        <p className="text-gray-200">Phone: +251 962719768</p>
-        <p className="text-gray-200">Email: surafelgetnet@gmail.com</p>
-        <p className="text-gray-200">Address: አኮቴት ፕሪ ት/ቤት ፊትለፊት, Bahirdar, Ethiopia</p>
+      <div className="mt-6 sm:mt-8 text-center px-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-3 sm:mb-4">Get in Touch</h2>
+        <p className="text-gray-200 text-sm sm:text-base">You can reach us at:</p>
+        <p className="text-gray-200 text-sm sm:text-base">Phone: +251 962719768</p>
+        <p className="text-gray-200 text-sm sm:text-base">Email: surafelgetnet@gmail.com</p>
+        <p className="text-gray-200 text-sm sm:text-base">Address: አኮቴት ፕሪ ት/ቤት ፊትለፊት, Bahirdar, Ethiopia</p>
       </div>
     </div>
   );

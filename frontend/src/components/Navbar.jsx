@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <div className='bg-transparent z-10 fixed w-full h-[3.5em] flex justify-between items-center p-10'>
-      <h1 className='text-white text-2xl font-bold'>ራስ ግዕዝ</h1>
+      <h1 className='text-white text-2xl font-bold'>ራስ ጌዝ</h1>
       <div className='md:hidden'>
         <button onClick={toggleMenu} className='text-white focus:outline-none'>
           {/* Hamburger Icon */}

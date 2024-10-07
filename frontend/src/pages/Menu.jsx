@@ -16,9 +16,9 @@ function Menu() {
           <div className="text-center p-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg whitespace-nowrap">Welcome to Ras GeZ</h1>
             <p className="text-base sm:text-lg md:text-xl mb-6 drop-shadow-md">
-              The Best Restaurant in Bahirdar, Ethiopia
+              The Best Restaurant in Bahirdar, Ethiopia. <br /> አኮቴት ፕሪ ት/ቤት ፊትለፊት
             </p>
-            
+           
             <a 
               href="#Contact"  
               className="mt-6 inline-block z-10 relative px-4 sm:px-6 py-2 sm:py-3 text-base sm:text-lg font-semibold text-white bg-blue-900 rounded-md shadow-xl transition duration-300 ease-in-out transform hover:bg-white hover:border-blue-900 hover:text-black hover:border-2 hover:scale-105"

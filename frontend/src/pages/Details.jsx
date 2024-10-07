@@ -86,7 +86,10 @@ function Details() {
           <p className="text-sm sm:text-base text-center text-white">
             Thank you for your business!
           </p>
+          
         </div>
+
+       
       </div>
     </div>
   );

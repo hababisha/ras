@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import cbe from '../assets/cbe.png';
 import telebirr from '../assets/telebirr.png';
-import image from '../assets/4.jpg';
+import image from '../assets/ras.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Details() {
